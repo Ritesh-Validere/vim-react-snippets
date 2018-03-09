@@ -25,9 +25,7 @@ class ${1:`!v expand('%:t:r')`} extends Component {
 	}
 }
 
-function mapStateToProps(state) {
-	return {};
-}
+const mapStateToProps = (state) => ({});
 
 export default connect(mapStateToProps)($1);
 endsnippet
@@ -64,13 +62,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './${2:$1}.css';
 
-function ${1:`!v expand('%:t:r')`}(${3:{...props}}) {
-	return (
-		<div className={styles.base}>
-			$4
-		</div>
-	);
-}
+const ${1:`!v expand('%:t:r')`} = (${3:{...props}}) =>
+	<div className={styles.base}>
+		$4
+	</div>
 
 $1.defaultProps = {};
 
